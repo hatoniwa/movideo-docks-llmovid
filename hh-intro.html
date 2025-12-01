@@ -4,6 +4,19 @@
   <meta charset="UTF-8">
   <title>Pharaoh’s Hyakunin Isshu Game — Reconstructed (EN)</title>
   <style>
+<!-- 🌟 MOVIDEO Counter: hh_intro -->
+<script>
+fetch("https://api.countapi.xyz/hit/hatoniwa/hh_intro")
+  .then(r => r.json())
+  .then(d => {
+    document.getElementById("visitCount").textContent =
+      "👁 Views: " + d.value;
+  })
+  .catch(() => {
+    document.getElementById("visitCount").textContent =
+      "👁 Views: ---";
+  });
+</script>    
     body {
       margin: 0;
       background: black;
